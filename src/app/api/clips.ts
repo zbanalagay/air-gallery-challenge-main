@@ -65,10 +65,12 @@ export interface ClipsListResponse {
     total: number;
     clips: Clip[];
   };
-  pagination: {
-    hasMore: boolean;
-    cursor: null | string;
-  };
+  pagination: IPagniationClipListResponse;
+}
+
+export interface IPagniationClipListResponse {
+  hasMore: boolean;
+  cursor: null | string;
 }
 
 const boardId = "c74bbbc8-602b-4c88-be71-9e21b36b0514";

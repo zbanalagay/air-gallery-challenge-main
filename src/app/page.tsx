@@ -1,3 +1,7 @@
-export default function Home() {
-  return <main></main>;
+import BoardsLayout from "./components/Boards/BoardsLayout";
+import AssetsLayout from "./components/Assets/AssetsLayout";
+
+export default async function Home() {
+ 
+  return <main><BoardsLayout/><AssetsLayout /></main>;
 }
